@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    /* 内容宽度超过浏览器物理宽度，就会出现滚动条！ */
+    min-width: 1800px;
+    height: 100%;
+}
+.header{
+  background-color: #EAFFEB;
+  height: 40px;
+  border-bottom: 1px #23B84B solid;
+  font-size: 15px;
+  font-weight: lighter;
+  margin-bottom: 20px
+}
+.clr-23B84B{
+  color: #23B84B;
+}
+.clr-00A5E8{
+  color: #00A5E8;
+}
+.mr5{
+  margin-right: 5px;
+}
+.mr10{
+  margin-right: 10px;
+}
+.mr15{
+  margin-right: 15px;
+}
+.mr25{
+  margin-right: 25px;
+}
+.mr50{
+  margin-right: 50px;
+}
+.mr150{
+  margin-right: 150px;
+}
+
+.ml50{
+  margin-left: 50px;
+}
+.mt5{
+  margin-top: 5px;
+}
+.mt15{
+  margin-top: 15px;
+}
+
+.width300{
+  width: 300px;
+}
+.select-w100h22{
+  height: 25px;
+  width: 100px;
+}
+
+.ftsz13{
+  font-size: 13px;
+}
+.buttonsize{
+  width: 45px;
+  height: 23px;
+  border: 1px black soild;
+  outline: none;
+}
+.bluebutton{
+  background-color: #00A5E8;
+  color: white;
+}
+
+.basic-col{
+    width: calc((100%/16));
+}
+
+.form-select{
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+
+  /*很关键：将默认的select选择框样式清除*/
+  /* appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none; */
+  /*在选择框的最右侧中间显示小箭头图片*/
+  /* background: url("../../img/select_arrow.svg") no-repeat scroll right center transparent;
+
+  background-size: 6px; */
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  /* padding-right: 14px; */
+
+  /* select::-ms-expand { display: none; } */
+}
+
+/* table表格 */
+#customers
+  {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  width:100%;
+  border-collapse:collapse;
+  border:1px solid #E6E6E6;
+  }
+#customers tr
+ {
+  height: 32px;
+ }
+
+#customers td, #customers th
+  {
+  font-size:12px;
+  padding:3px 7px 2px 7px;
+  }
+
+#customers th
+  {
+  font-size:10px;
+  text-align:left;
+  padding-top:5px;
+  padding-bottom:4px;
+  background-color:#F4F4F4;
+  }
+
+/* #customers tr.alt td
+  {
+  color:#000000;
+  background-color:#EAF2D3;
+  } */
+  .flex{
+    display: flex;
+  }
+  .flex-al-ct{
+    display: flex;
+    align-items: center;
+  }
+  .flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .flex-start{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .flex-end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .flex-around{
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-around;
+  }
